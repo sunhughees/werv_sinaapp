@@ -15,9 +15,9 @@ import MySQLdb
 
 SAE_HOST = 'w.rdc.sae.sina.com.cn'
 SAE_PORT = 3307
-SAE_USER = '0245wl5032' # your access key
-SAE_PASSWD = '2jixxj021iy1ikm3hy3iz0wlkww0z1jy140iii0w' #  your secret key
-SAE_DB = 'app_'+'werv' # your app name 
+SAE_USER = '' # your access key
+SAE_PASSWD = '' #  your secret key
+SAE_DB = 'app_'+'' # your app name 
 
 
 conn = MySQLdb.connect(host=SAE_HOST,
