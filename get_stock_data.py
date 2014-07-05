@@ -3,7 +3,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-stock_instrument = '600064'
+stock_instrument = '600064' # type the stock instrument you want to get
 
 if int(stock_instrument[0])==6:
     stock_q = 'sh'+stock_instrument
@@ -12,7 +12,7 @@ else:
 
 r = requests.get('http://hq.sinajs.cn/list='+stock_q)
 
-data = BeautifulSoup(r.text).p.string.encode('utf-8')
+data = BeautifulSoup(r.text).p.string.encode('utf-8') # this is quite important, because the raw data is GBK 
 info = data[21:-3].split(',')
 
 stock_datas = {
