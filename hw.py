@@ -6,3 +6,5 @@ print "Hello, World!"
 print "Ni Hao"
 
 print "Shi Jie"
+
+print math.pi
